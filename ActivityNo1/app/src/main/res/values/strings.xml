@@ -5,4 +5,6 @@
     <string name="name">Name</string>
     <string name="email">Email</string>
     <string name="sap_id">SAP ID</string>
+    <string name="google_search">Google Search</string>
+    <string name="google">Google</string>
 </resources>

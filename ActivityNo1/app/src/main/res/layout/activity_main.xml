@@ -23,4 +23,14 @@
         android:padding="10sp"
         android:text="@string/arsh"/>
 
+    <Button
+        android:id="@+id/btnGoogle"
+        android:layout_centerInParent="true"
+        android:layout_below="@id/btnArsh"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:padding="10sp"
+        android:text="@string/google"/>
+
 </RelativeLayout>
