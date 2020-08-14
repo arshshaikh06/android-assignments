@@ -1,2 +1,3 @@
-# College_Activities
+# Android Assignments #JusticeForCordova
+
 Just some Online college stuff...
