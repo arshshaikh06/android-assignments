@@ -6,4 +6,4 @@ Just some Online college stuff...
 
 -   [Java Files](./Calculator/app/src/main/java/com/arshshaikh/calculator)
 -   [Layout Files](./Calculator/app/src/main/res/layout)
--   [Screenshot](./Calculator/screenshots)
+-   ![Screenshot](./Calculator/screenshots/calculator_ss.jpg)
