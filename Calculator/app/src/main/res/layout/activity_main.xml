@@ -1,0 +1,322 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBlack"
+    android:orientation="vertical"
+    android:weightSum="1"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.1">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginHorizontal="16dp"
+            android:text="Calculator"
+            android:textColor="@color/colorWhite"
+            android:textSize="20sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.3"
+        android:layout_gravity="center_vertical"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tvCalcScreen"
+            android:layout_gravity="bottom"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginRight="16dp"
+            android:gravity="center_vertical|right"
+            android:textColor="@color/colorWhite"
+            android:textSize="60sp"
+            android:autoSizeTextType="uniform"
+            android:autoSizeMinTextSize="12sp"
+            android:autoSizeMaxTextSize="60sp"
+            android:autoSizeStepGranularity="2sp"
+            tools:ignore="RtlCompat" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.60"
+        android:background="@color/colorDark"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.20"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btnClearAll"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="0.25"
+                android:background="@color/colorDark"
+                android:text="AC"
+                android:stateListAnimator="@null"
+                android:textColor="@color/colorRed"
+                android:textSize="40sp" />
+
+            <Button
+                android:id="@+id/btnBackSpace"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="0.25"
+                android:background="@color/colorDark"
+                android:text="\u232b"
+                android:stateListAnimator="@null"
+                android:textColor="@color/colorWhite"
+                android:textSize="40sp" />
+
+            <Button
+                android:id="@+id/btnPercentage"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="0.25"
+                android:background="@color/colorDark"
+                android:text="%"
+                android:stateListAnimator="@null"
+                android:textColor="@color/colorYellow"
+                android:textSize="40sp" />
+
+            <Button
+                android:id="@+id/btnDivision"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="0.25"
+                android:background="@color/colorDark"
+                android:text="/"
+                android:stateListAnimator="@null"
+                android:textColor="@color/colorYellow"
+                android:textSize="40sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.20"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btnSeven"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="0.25"
+                android:background="@color/colorDark"
+                android:text="7"
+                android:stateListAnimator="@null"
+                android:textColor="@color/colorWhite"
+                android:textSize="40sp" />
+
+            <Button
+                android:id="@+id/btnEight"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="0.25"
+                android:background="@color/colorDark"
+                android:text="8"
+                android:stateListAnimator="@null"
+                android:textColor="@color/colorWhite"
+                android:textSize="40sp" />
+
+            <Button
+                android:id="@+id/btnNine"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="0.25"
+                android:background="@color/colorDark"
+                android:text="9"
+                android:stateListAnimator="@null"
+                android:textColor="@color/colorWhite"
+                android:textSize="40sp" />
+
+            <Button
+                android:id="@+id/btnMultiplication"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="0.25"
+                android:background="@color/colorDark"
+                android:text="*"
+                android:stateListAnimator="@null"
+                android:textColor="@color/colorYellow"
+                android:textSize="40sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.20"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btnFour"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="0.25"
+                android:background="@color/colorDark"
+                android:text="4"
+                android:stateListAnimator="@null"
+                android:textColor="@color/colorWhite"
+                android:textSize="40sp" />
+
+            <Button
+                android:id="@+id/btnFive"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="0.25"
+                android:background="@color/colorDark"
+                android:text="5"
+                android:stateListAnimator="@null"
+                android:textColor="@color/colorWhite"
+                android:textSize="40sp" />
+
+            <Button
+                android:id="@+id/btnSix"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="0.25"
+                android:background="@color/colorDark"
+                android:text="6"
+                android:stateListAnimator="@null"
+                android:textColor="@color/colorWhite"
+                android:textSize="40sp" />
+
+            <Button
+                android:id="@+id/btnSubtraction"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="0.25"
+                android:background="@color/colorDark"
+                android:text="-"
+                android:stateListAnimator="@null"
+                android:textColor="@color/colorYellow"
+                android:textSize="40sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.20"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btnOne"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="0.25"
+                android:background="@color/colorDark"
+                android:text="1"
+                android:stateListAnimator="@null"
+                android:textColor="@color/colorWhite"
+                android:textSize="40sp" />
+
+            <Button
+                android:id="@+id/btnTwo"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="0.25"
+                android:background="@color/colorDark"
+                android:text="2"
+                android:stateListAnimator="@null"
+                android:textColor="@color/colorWhite"
+                android:textSize="40sp" />
+
+            <Button
+                android:id="@+id/btnThree"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="0.25"
+                android:background="@color/colorDark"
+                android:text="3"
+                android:stateListAnimator="@null"
+                android:textColor="@color/colorWhite"
+                android:textSize="40sp" />
+
+            <Button
+                android:id="@+id/btnAddition"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="0.25"
+                android:background="@color/colorDark"
+                android:text="+"
+                android:stateListAnimator="@null"
+                android:textColor="@color/colorYellow"
+                android:textSize="40sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.20"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btnDecimalPoint"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="0.25"
+                android:background="@color/colorDark"
+                android:text="."
+                android:stateListAnimator="@null"
+                android:textColor="@color/colorWhite"
+                android:textSize="40sp" />
+
+            <Button
+                android:id="@+id/btnZero"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="0.25"
+                android:background="@color/colorDark"
+                android:text="0"
+                android:stateListAnimator="@null"
+                android:textColor="@color/colorWhite"
+                android:textSize="40sp" />
+
+            <Button
+                android:id="@+id/btnPower"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="0.25"
+                android:background="@color/colorDark"
+                android:text="^"
+                android:stateListAnimator="@null"
+                android:textColor="@color/colorYellow"
+                android:textSize="40sp" />
+
+            <Button
+                android:id="@+id/btnEquals"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="0.25"
+                android:background="@color/colorYellow"
+                android:text="="
+                android:stateListAnimator="@null"
+                android:textColor="@color/colorWhite"
+                android:textSize="40sp" />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</LinearLayout>
